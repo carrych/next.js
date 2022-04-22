@@ -85,6 +85,7 @@
   max-width: 300px;
 }
 
+.navbar li,
 .card:hover,
 .card:focus,
 .card:active {
@@ -113,4 +114,22 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.navbar {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 0 1em;
 }

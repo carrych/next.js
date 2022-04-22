@@ -1,13 +1,14 @@
 import { pages } from '../../utils';
-import ListItem from './list-item';
+import ListItem from './ListItem';
 import { v4 as uuid } from 'uuid';
-import NavLogo from './navLogo';
+import NavLogo from './NavLogo';
+import styles from '../../styles/Home.module.css';
 
 const Nav = () => {
   const namesOfPages = Object.keys(pages);
 
   return (
-    <nav>
+    <nav className={styles.navbar}>
       <NavLogo />
 
       <ul>
