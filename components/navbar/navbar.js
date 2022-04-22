@@ -1,34 +1,24 @@
-import Link from 'next/link';
+import { pages } from '../../utils';
+import ListItem from './list-item';
+import { v4 as uuid } from 'uuid';
+import NavLogo from './navLogo';
 
 const Nav = () => {
+  const namesOfPages = Object.keys(pages);
+
   return (
     <nav>
-      <div className="logo">
-        <h1>Next.js project</h1>
-      </div>
+      <NavLogo />
+
       <ul>
-        <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            <a>Contact Us</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/new">
-            <a>New</a>
-          </Link>
-        </li>
+        {namesOfPages.map((pageName) => (
+          <ListItem
+            href={pages[pageName].route}
+            linkContent={pages[pageName].linkContent}
+            key={uuid()}
+          />
+        ))}
       </ul>
-      ;
     </nav>
   );
 };
