@@ -2,7 +2,7 @@ import { pages } from '../../utils';
 import ListItem from './ListItem';
 import { v4 as uuid } from 'uuid';
 import NavLogo from './NavLogo';
-import styles from '../../styles/Home.module.css';
+import styles from '../../styles/Navbar.module.css';
 
 const Nav = () => {
   const namesOfPages = Object.keys(pages);

@@ -1,0 +1,34 @@
+.navbar li{
+    color: #0070f3;
+    border-color: #0070f3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 0 1em;
+}
+
+.logo {
+    height: auto;
+    margin-right: auto;
+}
+
+.logo h1 {
+    margin: 0;
+    padding-left: 2em;
+    line-height: 3em;
+}
