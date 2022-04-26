@@ -15,6 +15,7 @@ export default function Home() {
         dignissimos doloremque ea iure iusto nobis placeat quaerat quia? Aspernatur deleniti
         doloribus ducimus ipsam magni, maiores modi provident repellendus.
       </p>
+      <a className="btn">Test button</a>
     </div>
   );
 }
