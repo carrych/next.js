@@ -3,7 +3,7 @@ import Head from 'next/head';
 const Header = () => {
   return (
     <Head>
-      <title>Create Next App</title>
+      <title>Next.js App</title>
     </Head>
   );
 };

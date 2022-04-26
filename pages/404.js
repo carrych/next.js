@@ -1,6 +1,17 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
+const useTimeoutPushHome = (router) =>
+  useEffect(() => {
+    setTimeout(() => router.push('/'), 3000);
+  }, []);
 
 const Page404 = () => {
+  const router = useRouter();
+
+  useTimeoutPushHome(router);
+
   return (
     <div className="textCenter">
       <h1>Oops...</h1>
