@@ -1,7 +1,6 @@
 import styles from '../../styles/Users.module.css';
 import Link from 'next/link';
-
-const url = 'https://jsonplaceholder.typicode.com/users';
+import { url } from '../../utils';
 
 export const getStaticProps = async () => {
   const res = await fetch(url);

@@ -27,6 +27,10 @@ a {
   text-align: center;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .textCenter {
   display: inline-block;
   width: 100%;

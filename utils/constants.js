@@ -4,3 +4,5 @@ export const pages = {
   new: { route: '/new', linkContent: 'New Users' },
   contact: { route: '/contact', linkContent: 'Contact Us' },
 };
+
+export const url = 'https://jsonplaceholder.typicode.com/users';
