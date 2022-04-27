@@ -1,0 +1,30 @@
+.navbar li {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  border-bottom: 1px solid #eaeaea;
+  height: 75px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 0 1em;
+}
+
+.logo {
+  height: auto;
+  margin-right: auto;
+}
